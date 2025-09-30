@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+#define M_PI 3.14159265358979323846
+int main()
+{
+	float rad;
+	setlocale(LC_CTYPE, "RUS");
+	int gr;
+	
+
+	puts("Введите значение переменной gr");
+	scanf("%d", &gr);
+	rad = sin(gr * M_PI / 180);
+	printf("%.6f", rad);
+
+
+
+
+}
