@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+#define c   0.4
+int main()
+{
+	setlocale(LC_CTYPE, "RUS");
+	float x,y,a,b;
+	puts("Введите значение переменной x");
+	scanf("%f", &x);
+	a = (log10(x));
+	b = (pow(a, 2) + c * x);
+	y = (exp(2 * x) + pow(9.7, b));
+	printf("Значение переменной y равно:%lf", y);
+
+
+
+	
+
+}
