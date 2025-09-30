@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double x = -2.235 * 0.1;
+    double y = 2.23;
+    double z = 15.221;  
+
+    double part1 = pow(pow(x, 6) + pow(log(y), 2), 1.0/3.0);                    
+    double part2 = exp(fabs(x - y)) * pow(fabs(x - y), x + y);          
+    double part3 = atan(x) + atan(z);        
+
+    double W = part1 + part2 / part3;
+
+    printf("W = %f\n", W);
+
+    return 0;
+}
